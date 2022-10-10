@@ -1,0 +1,28 @@
+#textoContacto {
+    color: pink;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom:10px;
+    text-align: left;
+}
+
+
+#btn {
+border: 1px solid whitesmoke; /*anchura, estilo y color borde*/
+padding: 10px; /*espacio alrededor texto*/
+background-color: pink; /*color botón*/
+color: white; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'Montserrat', sans-serif; /*tipografía texto*/
+border-radius: 30px; /*bordes redondos*/
+margin-bottom: 20px;
+margin-top: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 40px;
+padding-right: 40px;
+} 
+
+#containerContacto {
+    margin-bottom: 20px ;}

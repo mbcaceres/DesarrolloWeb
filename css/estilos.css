@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/*GRID*/
+.gridContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto auto;
+  overflow: hidden;
+  grid-template-areas: "header header" "imagenPortada imagenPortada" "textoBienvenida textoBienvenida" "secciones secciones" "blogImagen blogTexto" "footer footer"; }
+
+header {
+  grid-area: header;
+  display: flex;
+  background-color: white;
+  position: static;
+  border: lightpink 1px; }
+
+.imagenPortada {
+  grid-area: imagenPortada; }
+
+.textoBienvenida {
+  grid-area: textoBienvenida;
+  font-family: montserrat; }
+
+footer {
+  grid-area: footer;
+  font-family: montserrat;
+  background-color: #f1f1f1; }
+
+.secciones {
+  grid-template-areas: secciones;
+  grid-area: secciones;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.blogImagen {
+  grid-area: blogImagen;
+  grid-template-areas: blogImagen;
+  width: 100%; }
+
+.blogTexto {
+  grid-area: blogTexto;
+  grid-template-areas: blogTexto;
+  background-color: pink;
+  font-family: montserrat;
+  padding-top: 280px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  color: white; }
+
+/* GRID BRANDING*/
+.gridBranding {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto auto;
+  overflow: hidden;
+  grid-template-areas: "header header" "imagenPortada imagenPortada" "textoBranding textoBranding" "tipografiaPortfolio tipografiaPortfolio" "imagenesPortfolio imagenesPortfolio" "footer footer"; }
+
+.textoBranding {
+  grid-template-areas: textoBranding;
+  grid-area: textoBranding;
+  font-family: montserrat,sans-serif;
+  background-color: lightpink;
+  color: white;
+  padding: 20px; }
+
+.tipografiaPortfolio {
+  grid-template-areas: tipografiaPortfolio;
+  grid-area: tipografiaPortfolio;
+  font-family: montserrat,sans-serif; }
+
+.imagenesPortfolio {
+  grid-template-areas: imagenesPortfolio;
+  grid-area: imagenesPortfolio;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+
+/*GRID MENU*/
+.gridEventos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto;
+  overflow: hidden;
+  grid-template-areas: "header header" "imagenPortada imagenPortada" "eventosImagenes eventosImagenes" "footer footer"; }
+
+.eventosImagenes {
+  grid-template-areas: eventosImagenes;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: montserrat;
+  color: lightpink; }
+
+/*GRID EVENTOS*/
+.gridEventos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto;
+  overflow: hidden;
+  grid-template-areas: "header header" "imagenPortada imagenPortada" "eventosImagenes eventosImagenes" "footer footer"; }
+
+.eventosImagenes {
+  grid-template-areas: eventosImagenes;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: montserrat;
+  color: lightpink; }
+
+/*HEADER*/
+.tipografiaSitio {
+  font-family: Montserrat; }
+
+li {
+  list-style-type: none;
+  padding: 15px;
+  margin: 10px; }
+
+a {
+  text-decoration: none; }
+
+nav {
+  width: 100%; }
+
+.logo {
+  margin: 10px; }
+
+.listadoMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.imagenPortada {
+  width: 100%; }
+
+.textoBienvenida {
+  text-align: center;
+  padding: 10px;
+  background-color: lightpink;
+  color: white; }
+
+/*BLOG*/
+.boton {
+  border: 1px solid whitesmoke;
+  /*anchura, estilo y color borde*/
+  padding: 10px;
+  /*espacio alrededor texto*/
+  background-color: white;
+  /*color botón*/
+  color: hotpink;
+  /*color texto*/
+  text-decoration: none;
+  /*decoración texto*/
+  text-transform: uppercase;
+  /*capitalización texto*/
+  font-family: 'Montserrat', sans-serif;
+  /*tipografía texto*/
+  border-radius: 50px;
+  /*bordes redondos*/ }
+
+/*FOOTER*/
+.footerEdition {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 30px; }
+
+.tipografias {
+  font-family: montserrat, sans-serif; }
+
+.overFlow {
+  overflow: hidden; }
+
+.cssUl1 {
+  list-style: none; }
+
+.cssUl2 {
+  list-style: none; }
+
+@media only screen and (max-width: 768px) {
+  .cssFooter {
+    font-size: 14px;
+    text-decoration: none; } }
+
+@media only screen and (max-width: 768px) {
+  body .gridContainer {
+    display: grid;
+    grid-template-areas: "header" "imagenPortada" "textoBienvenida" "secciones" "blogImagen" "blogTexto" "formularioContacto" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto; }
+  /*DESIGNANDO AREAS*/
+  header {
+    flex-direction: column;
+    grid-template-areas: header; }
+  .imagenPortada {
+    grid-template-areas: imagenPortada;
+    grid-area: imagenPortada; }
+  .textoBienvenida {
+    grid-template-areas: textoBienvenida;
+    grid-area: textoBienvenida; }
+  .secciones {
+    grid-area: secciones;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+  .blogImagen {
+    grid-area: blogImagen;
+    grid-template-areas: blogImagen; }
+  .blogTexto {
+    grid-area: blogTexto;
+    grid-template-areas: blogTexto; }
+  .listadoMenu {
+    flex-direction: column;
+    justify-content: flex-start; }
+  img {
+    max-width: 100%; }
+  .blogTexto {
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px; } }
+
+/*TABLET*/
+@media only screen and (min-min-width: 769px) and (max-width: 1023px) {
+  body .gridContainer {
+    display: grid;
+    grid-template-areas: "header" "imagenPortada" "textoBienvenida" "secciones" "blogImagen" "blogTexto" "formularioContacto" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto; }
+  header {
+    flex-direction: column;
+    grid-template-areas: header; }
+  .imagenPortada {
+    grid-template-areas: imagenPortada;
+    grid-area: imagenPortada; }
+  .textoBienvenida {
+    grid-template-areas: textoBienvenida;
+    grid-area: textoBienvenida; }
+  .secciones {
+    grid-area: secciones;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+  .blogImagen {
+    grid-area: blogImagen;
+    grid-template-areas: blogImagen; }
+  .blogTexto {
+    grid-area: blogTexto;
+    grid-template-areas: blogTexto; }
+  .listadoMenu {
+    flex-direction: column;
+    justify-content: flex-start; } }
+
+#textoContacto {
+  color: pink;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: left; }
+
+#btn {
+  border: 1px solid whitesmoke;
+  /*anchura, estilo y color borde*/
+  padding: 10px;
+  /*espacio alrededor texto*/
+  background-color: pink;
+  /*color botón*/
+  color: white;
+  /*color texto*/
+  text-decoration: none;
+  /*decoración texto*/
+  text-transform: uppercase;
+  /*capitalización texto*/
+  font-family: 'Montserrat', sans-serif;
+  /*tipografía texto*/
+  border-radius: 30px;
+  /*bordes redondos*/
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px; }
+
+#containerContacto {
+  margin-bottom: 20px; }
+
+/*NOSOTROS*/
+/*GRID NOSOTROS*/
+.gridNosotros {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto;
+  overflow: hidden;
+  grid-template-areas: "header header" "imagenPortada imagenPortada" "textoNosotros textoNosotros" "footer footer"; }
+
+.textoNosotros {
+  grid-template-areas: textoNosotros;
+  font-family: montserrat,sans-serif;
+  background-color: lightpink;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  grid-area: textoNosotros; }

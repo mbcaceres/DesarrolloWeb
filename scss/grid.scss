@@ -1,0 +1,123 @@
+/*GRID*/
+
+.gridContainer {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: auto auto auto auto auto auto;
+overflow: hidden;
+grid-template-areas:
+"header header"
+"imagenPortada imagenPortada"
+"textoBienvenida textoBienvenida"
+"secciones secciones"
+"blogImagen blogTexto"
+"footer footer";
+}
+
+header{grid-area: header; display:flex; background-color: white; position: static; border: lightpink 1px;}
+.imagenPortada {grid-area: imagenPortada;}
+.textoBienvenida {grid-area: textoBienvenida;
+font-family: montserrat;}
+
+footer {grid-area: footer;
+font-family: montserrat;
+background-color: #f1f1f1;}
+
+.secciones {
+	grid-template-areas: secciones;
+	grid-area: secciones;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;}
+
+.blogImagen {
+	grid-area: blogImagen;
+	grid-template-areas: blogImagen;
+	width: 100%;
+}
+.blogTexto { grid-area: blogTexto;
+grid-template-areas: blogTexto;
+background-color:pink;
+font-family: montserrat;
+padding-top: 280px;
+padding-left: 20px;
+padding-bottom: 50px;
+color:white;}
+
+
+/* GRID BRANDING*/
+
+.gridBranding {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: auto auto auto auto auto auto;
+overflow: hidden;
+grid-template-areas:
+"header header"
+"imagenPortada imagenPortada"
+"textoBranding textoBranding"
+"tipografiaPortfolio tipografiaPortfolio"
+"imagenesPortfolio imagenesPortfolio"
+"footer footer";}
+
+
+.textoBranding {
+	grid-template-areas: textoBranding;
+	grid-area: textoBranding;
+	font-family: montserrat,sans-serif;
+	background-color: lightpink;
+	color: white;
+	padding: 20px;}
+
+.tipografiaPortfolio {
+	grid-template-areas: tipografiaPortfolio;
+	grid-area: tipografiaPortfolio;
+	font-family: montserrat,sans-serif;}
+
+.imagenesPortfolio {
+	grid-template-areas: imagenesPortfolio;
+	grid-area: imagenesPortfolio;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;}
+
+/*GRID MENU*/
+.gridEventos {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: auto auto auto auto auto;
+overflow: hidden;
+grid-template-areas:
+"header header"
+"imagenPortada imagenPortada"
+"eventosImagenes eventosImagenes"
+"footer footer";}
+
+.eventosImagenes {
+	grid-template-areas: eventosImagenes;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-family: montserrat;
+	color: lightpink; }
+
+/*GRID EVENTOS*/
+.gridEventos {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: auto auto auto auto auto;
+overflow: hidden;
+grid-template-areas:
+"header header"
+"imagenPortada imagenPortada"
+"eventosImagenes eventosImagenes"
+"footer footer";}
+
+
+.eventosImagenes {
+	grid-template-areas: eventosImagenes;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-family: montserrat;
+	color: lightpink;}

@@ -1,0 +1,24 @@
+/*FOOTER*/
+
+.footerEdition {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-left: 30px;}
+
+.tipografias {
+	font-family: montserrat, sans-serif;}
+
+.overFlow {
+	overflow: hidden;}
+
+.cssUl1 {
+	list-style: none;}
+.cssUl2 {
+	list-style: none;}
+
+
+	@media only screen and (max-width: 768px) {
+.cssFooter {
+	font-size: 14px;
+	text-decoration: none;} }

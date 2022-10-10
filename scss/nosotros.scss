@@ -1,0 +1,22 @@
+/*NOSOTROS*/
+/*GRID NOSOTROS*/
+
+.gridNosotros{
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: auto auto auto auto;
+overflow: hidden;
+grid-template-areas:
+"header header"
+"imagenPortada imagenPortada"
+"textoNosotros textoNosotros"
+"footer footer";}
+
+.textoNosotros {
+	grid-template-areas: textoNosotros;
+	font-family: montserrat,sans-serif;
+	background-color: lightpink;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	grid-area: textoNosotros;}
