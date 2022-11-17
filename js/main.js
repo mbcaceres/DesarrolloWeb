@@ -56,3 +56,17 @@ Logo.prototype.cotizarLogo = function () {
        cantidad *= 1.50;
    }
     return cantidad; }
+
+
+/* DOM */
+
+const cotizador=document.getElementById ('cotizador');
+console.log(cotizador);
+for (const c of cotizador) {
+    console.log(c);
+}
+
+var miBoton = document.getElementById('botonCotizador');
+miBoton.addEventListener('click', function() {
+    alert('Has hecho clic!!')
+  })
