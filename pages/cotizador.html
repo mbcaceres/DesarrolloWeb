@@ -37,7 +37,67 @@
 		<!-- CIERRE IMAGEN PORTADA-->
 		<!--BRANDING-->
 <div class= textoBranding id="cotizador">
-	<input type="button" id="botonCotizador" value="¡COTIZÁ AHORA!">
+<div class="container">
+  <div class="row">
+    <div class="col col-md-8 mr-md-auto ml-md-auto" >
+      <div id="contenido">
+            <header>
+               <h1 class="text-center">Cotiza tu logo!</h1>
+            </header>
+            <div class="row contenido-formulario">
+                <div class="col col-md-10 mr-md-auto ml-md-auto">
+                  <form action="#" id="cotizar-logo">
+                    <div class="form-group">
+                       <label for="nombre">Nombre de marca:</label>
+                       <select class="form-control" id="nombre">
+                         <option value="">- Seleccionar -</option>
+                         <option value="1">Ya lo tengo!</option>
+                        <option value="2">Quiero crear uno!</option>
+                      </select>
+                   </div>
+                                <div class="form-group">
+                                        <label for="empleados">Cantidad de empleados:</label>
+                                        <select class="form-control" id="empleados">
+                                            
+                                        </select>
+                                </div>
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                         <legend class="col-form-legend col-12"> Manual de Marca</legend>
+
+                                      <div class="col12">
+                                          <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input class="form-check-input" type="radio" name="tipo" value="basico" checked>
+                                              Básico
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input class="form-check-input" type="radio" name="tipo" value="completo">
+                                              Completo
+                                            </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </fieldset>
+
+                          <div id="cargando">
+                              <img src="img/spinner.gif">
+                          </div>
+                          <div id="resultado"></div>
+                          <div class="form-group">
+                                  <button type="submit" class="btn btn-raised btn-primary">Cotizar
+                                  </button>
+                          </div>
+                  </form> 
+                </div>
+          </div>
+      </div> <!--#contenido-->
+    </div>
+  </div>
+</div>
+
 		<br>
 		<hr>
 </div>	

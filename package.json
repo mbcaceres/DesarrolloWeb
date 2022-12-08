@@ -243,5 +243,13 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Este proyecto es la Entrega de Proyecto Final y vamos a usar:",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbcaceres/DesarrolloWeb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mbcaceres/DesarrolloWeb/issues"
+  },
+  "homepage": "https://github.com/mbcaceres/DesarrolloWeb#readme"
 }
